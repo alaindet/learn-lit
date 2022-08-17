@@ -10,3 +10,4 @@ This repository contains the learning material, demo, tests and everything I use
 
 ### Official
 - [Lit Documentation](https://lit.dev/docs/)
+- [Lit TypeScript Starter](https://github.com/lit/lit-element-starter-ts.git)
