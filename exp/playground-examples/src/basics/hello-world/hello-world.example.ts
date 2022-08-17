@@ -8,6 +8,7 @@ export class HelloWorldExample extends LitElement {
   render() {
     return html`
       <div>
+        <h3>Hello World</h3>
         <hello-world></hello-world>
         <hello-world name="Alain"></hello-world>
       </div>
