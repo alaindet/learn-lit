@@ -1,0 +1,27 @@
+{
+  "name": "custom-directives",
+  "private": true,
+  "version": "0.0.0",
+  "type": "module",
+  "main": "dist/app-root.es.js",
+  "exports": {
+    ".": "./dist/app-root.es.js"
+  },
+  "types": "types/app-root.d.ts",
+  "files": [
+    "dist",
+    "types"
+  ],
+  "scripts": {
+    "dev": "vite",
+    "build": "tsc && vite build"
+  },
+  "dependencies": {
+    "@floating-ui/dom": "^1.0.1",
+    "lit": "^2.2.8"
+  },
+  "devDependencies": {
+    "typescript": "^4.6.4",
+    "vite": "^3.0.7"
+  }
+}
