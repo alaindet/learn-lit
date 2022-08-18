@@ -17,6 +17,7 @@
     "build": "tsc && vite build"
   },
   "dependencies": {
+    "@floating-ui/dom": "^1.0.1",
     "lit": "^2.2.8"
   },
   "devDependencies": {
