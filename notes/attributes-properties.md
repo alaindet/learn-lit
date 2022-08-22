@@ -14,11 +14,19 @@
   - Ex.: `value` attribute of &lt;input&gt; has matching `value` property
   - Ex.: `tabindex` attribute has matching `tabIndex` property (note the camel-case)
 
-## Reactive properties
-- Lit has **reactive properties** which are properties initialized by matching attributes
-- Converters are functions Lit uses to set a property from an attribute
-- Built-in converters take the `type` property of the `@property()` Lit decorator and cast the attribute value to the given type (`Number`, `Boolean`, etc.)
-- Custom converters are needed for converting specific attributes into properties
+## Reactive properties and converters
+- A **reactive property** of a custom element built with Lit is a property that, when updated, triggers the change detection
+- A reactive property can be bound to an attribute via the `@property()` decorator
+- Bound attribute can initialize the property value via converters
+- Lit has built-in converters based on the `type` field of `@property()` for numbers and booleans, but it needs custom code to convert attribute custom types, like `Date`
+- Built-int converters are
+  - `String` (default)
+  - `Number`
+  - `Boolean`
+  - `Array`
+  - `Object`
+- If `@property()` has `reflect: true` set, changes in the property are also shown in the HTML attribute
+- A reverse property => attribute converter is used for that
 
 ## Resources
 - [Custom attribute converters - Lit Tutorial](https://lit.dev/tutorials/custom-attribute-converter/)
