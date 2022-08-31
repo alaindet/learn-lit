@@ -1,0 +1,12 @@
+:host {
+  --font-family: 'Times New Roman';
+}
+
+.cards {
+  display: flex;
+  margin: 0 -1rem;
+}
+
+.cards > * {
+  margin: 1rem;
+}

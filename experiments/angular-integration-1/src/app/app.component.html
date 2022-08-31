@@ -1,0 +1,7 @@
+<div class="cards">
+  <card-user
+    *ngFor="let user of users"
+    [user]="user"
+    (edit)="onEditUser($event)"
+  ></card-user>
+</div>
